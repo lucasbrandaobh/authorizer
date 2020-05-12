@@ -1,0 +1,21 @@
+{
+  "id": "transactions-schema",
+  "required": ["transaction"],
+  "properties": {
+    "transaction": {
+      "type": "object",
+      "required": [ "merchant", "amount", "time" ],      
+      "properties": {
+        "merchant": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number"
+        },
+        "time": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

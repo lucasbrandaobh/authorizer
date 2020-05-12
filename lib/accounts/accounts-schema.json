@@ -1,0 +1,18 @@
+{
+  "id": "accounts-schema",
+  "required": ["account"],
+  "properties": {
+    "account": {
+      "type": "object",
+      "required": [ "activeCard", "availableLimit" ],      
+      "properties": {
+        "activeCard": {
+          "type": "boolean"
+        },
+        "availableLimit": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
